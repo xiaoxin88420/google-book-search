@@ -19,6 +19,7 @@ const Home = () => {
     event.preventDefault()
     API.getBook(bookState.search)
       .then(({data}) => {
+        console.log(data)
         setBookState({ ...bookState, book: data, search: '' })
       })
       .catch(err => console.log(err))
