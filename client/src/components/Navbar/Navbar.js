@@ -11,7 +11,6 @@ import MenuIcon from '@material-ui/icons/Menu'
 import SvgIcon from '@material-ui/core/SvgIcon'
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart'
 import Container from '@material-ui/core/Container'
-import './Navbar.css'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,6 +27,10 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+  },
+  link: {
+    color: 'white',
+    textDecoration: 'none'
   }
 }))
 
